@@ -144,7 +144,7 @@ if(drawing.getContext){
 
 获取和解压缩所使用的库文件为[JSZip](https://github.com/Stuk/jszip),具体如何使用请参考[这里](https://stuk.github.io/jszip/)，需要注意的是JSZip的API是异步调用的，还需要学习下Promise。当zip包从服务器加载完成后，对zip包内的图片按文件夹解压缩并排序，注意解压缩出来的图片顺序并不固定，需要重新排序，sortFs()函数提供了排序功能。具体如何实现请参考gift.js中enter.animate()函数。
 
-```
+``` javascript
  enter.animate = function(canvas, option, callback){
 			var startTime ;
 
